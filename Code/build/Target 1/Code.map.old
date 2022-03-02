@@ -1,0 +1,164 @@
+LX51 LINKER/LOCATER V4.66.97.0                                                          03/02/2022  23:48:58  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.97.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\LX51.EXE .\build\Target 1\main.o TO .\build\Target 1\Code PRINT (.\build\Target 1\Code.map) REMOVEUNU
+>> SED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\build\Target 1\main.o (MAIN)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (PRINTF)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDOPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CSTPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?PLDIIDATA)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CCASE)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51S.LIB (PUTCHAR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\build\Target 1\Code (MAIN)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   000440H   CODE
+C:000000H   C:000000H   C:00FFFFH   000002H   CONST
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+I:000000H   I:000000H   I:00007FH   00001CH   DATA
+I:000020H.0 I:000020H.0 I:00002FH.7 000001H.1 BIT
+
+
+MEMORY MAP OF MODULE:  .\build\Target 1\Code (MAIN)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   00001BH   000014H   BYTE   UNIT     DATA           _DATA_GROUP_
+00001CH.0 00001FH.7 000004H.0 ---    ---      **GAP**
+000020H.0 000021H.0 000001H.1 BIT    UNIT     BIT            _BIT_GROUP_
+000021H.1 000021H   000000H.7 ---    ---      **GAP**
+000022H   000022H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   00035EH   00035CH   BYTE   UNIT     CODE           ?PR?PRINTF?PRINTF
+00035FH   0003ECH   00008EH   BYTE   UNIT     CODE           ?C?LIB_CODE
+0003EDH   000413H   000027H   BYTE   UNIT     CODE           ?PR?PUTCHAR?PUTCHAR
+000414H   000433H   000020H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+000434H   00043FH   00000CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+000440H   000441H   000002H   BYTE   UNIT     CONST          ?CO?MAIN
+
+
+
+LX51 LINKER/LOCATER V4.66.97.0                                                        03/02/2022  23:48:58  PAGE 2
+
+
+OVERLAY MAP OF MODULE:   .\build\Target 1\Code (MAIN)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> MAIN/MAIN
+
+MAIN/MAIN                   ----- -----  ----- -----
+  +--> PRINTF/PRINTF
+
+PRINTF/PRINTF               20H.0 21H.0  0008H 001BH
+  +--> PUTCHAR/PUTCHAR
+
+PUTCHAR/PUTCHAR             ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\build\Target 1\Code (MAIN)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000008H   DATA     ---       ?_PRINTF517?BYTE
+      00000008H   DATA     ---       ?_PRINTF?BYTE
+      00000008H   DATA     ---       ?_SPRINTF517?BYTE
+      00000008H   DATA     ---       ?_SPRINTF?BYTE
+      010003C7H   CODE     ---       ?C?CCASE
+      01000378H   CODE     ---       ?C?CLDOPTR
+      0100035FH   CODE     ---       ?C?CLDPTR
+      00000000H   NUMBER   ---       ?C?CODESEG
+      010003A5H   CODE     ---       ?C?CSTPTR
+      010003B7H   CODE     ---       ?C?PLDIIDATA
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000414H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      01000065H   CODE     ---       _PRINTF
+      01000065H   CODE     ---       _PRINTF517
+      010003EDH   CODE     ---       _PUTCHAR
+      0100005FH   CODE     ---       _SPRINTF
+      0100005FH   CODE     ---       _SPRINTF517
+      01000414H   CODE     ---       main
+
+
+
+SYMBOL TABLE OF MODULE:  .\build\Target 1\Code (MAIN)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       MAIN
+      01000414H   PUBLIC    CODE     ---       main
+
+      01000414H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       PRINTF
+      00000008H   PUBLIC    DATA     ---       ?_PRINTF517?BYTE
+      00000008H   PUBLIC    DATA     ---       ?_PRINTF?BYTE
+      00000008H   PUBLIC    DATA     ---       ?_SPRINTF517?BYTE
+      00000008H   PUBLIC    DATA     ---       ?_SPRINTF?BYTE
+      01000065H   PUBLIC    CODE     ---       _PRINTF
+LX51 LINKER/LOCATER V4.66.97.0                                                        03/02/2022  23:48:58  PAGE 3
+
+
+      01000065H   PUBLIC    CODE     ---       _PRINTF517
+      0100005FH   PUBLIC    CODE     ---       _SPRINTF
+      0100005FH   PUBLIC    CODE     ---       _SPRINTF517
+
+      ---         MODULE    ---      ---       ?C?CLDPTR
+      0100035FH   PUBLIC    CODE     ---       ?C?CLDPTR
+
+      ---         MODULE    ---      ---       ?C?CLDOPTR
+      01000378H   PUBLIC    CODE     ---       ?C?CLDOPTR
+
+      ---         MODULE    ---      ---       ?C?CSTPTR
+      010003A5H   PUBLIC    CODE     ---       ?C?CSTPTR
+
+      ---         MODULE    ---      ---       ?C?PLDIIDATA
+      010003B7H   PUBLIC    CODE     ---       ?C?PLDIIDATA
+
+      ---         MODULE    ---      ---       ?C?CCASE
+      010003C7H   PUBLIC    CODE     ---       ?C?CCASE
+
+      ---         MODULE    ---      ---       PUTCHAR
+      010003EDH   PUBLIC    CODE     ---       _PUTCHAR
+
+Program Size: data=30.1 xdata=0 const=2 code=1088
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
